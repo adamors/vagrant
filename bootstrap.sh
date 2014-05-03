@@ -10,7 +10,7 @@ sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password passwor
 sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password root'
 
 echo "Installing curl, vim, git etc. "
-sudo apt-get install -y curl python-software-properties vim git-core
+sudo apt-get install -y curl python-software-properties vim git-core ctags
 
 echo "Installing PHP"
 # sudo add-apt-repository -y ppa:ondrej/php5-oldstable  # for latest PHP 5.4
